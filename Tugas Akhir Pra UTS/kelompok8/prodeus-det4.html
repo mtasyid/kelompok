@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ABC Collection | E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <!-- IMG PR -->
+                    <img src="images/logo_utama.jpg" width="125px">
+                </div>
+                <nav>
+                    <ul id="menuitems">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Product</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="images/cart.png" width="30px" height="30px">
+                <img src="images/menu.png" class="menu-icon"
+                onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+    <!-- single details product -->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/deus4.jpg" width="100%" id="product-img">
+            </div>
+            <div class="col-2">
+                <p>Home | T-shirt</p>
+                <h1>Deus Ex Machina SEE YOU T-Shirt</h1>
+                <h4>IDR 400.000</h4>
+                <select>
+                    <option>Select Size</option>
+                    <option>XLarge</option>
+                    <option>Large</option>
+                    <option>Medium</option>
+                    <option>Small</option>
+                </select>
+                <input type="number" name="jumlah_algoritma" id="harga_algoritma" size="7" value="0" onchange="total()"></th>
+                <a href="#" class="btn">Add To Cart</a>
+
+                <h3>Product Details</h3>
+                <p>SEE YOU adalah kaos potongan Reguler-Fit, dengan 
+                    ilustrasi desain original Deus di bagian depan dan belakang.
+                </p>
+                <p>T-Shirt size Lebar Dada x Panjang Badan x Lebar Bahu x Panjang Lengan :<br>
+                    XLarge : 58cm x 77cm x 48,9cm x 21cm<br>
+                    Large : 54cm x 74,5cm x 47,7cm x 20,5cm<br>
+                    Medium : 51cm x 73cm x 46,5cm x 20cm<br>
+                    Small : 49cm x 71,5cm x 45,3cm x 19,5cm<br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- penghitungan -->
+    <div class="asd">
+        <table>
+			<tr>
+				<th><input type="text" name="total_jumlah" id="total" value="0"  readonly></th>
+			</tr>
+		</table>
+		<br><br>
+
+		<script type="text/javascript">
+		function total() {
+		var valgoritma = 400000 * parseInt(document.getElementById('harga_algoritma').value);
+		
+
+		var jumlah_harga = valgoritma;
+
+		document.getElementById('total').value = jumlah_harga;
+		}
+		
+		</script>
+    </div>
+    
+    <!-- title -->
+    <div class="small-container">
+        <div class="row">
+            <h2 class="title">Related Product</h2>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/deus1.jpg">
+                <h4>Deus Ex Machina Vintage-Canggu Address N/h4>
+                <p>IDR 400.000</p>
+                <a href="prodeus-det1.html" class="btn">Details Product</a>
+            </div>
+            <div class="col-4">
+                <img src="images/deus2.jpg">
+                <h4>Deus Ex Machina Vintage T=shirt</h4>
+                <p>IDR 400.000</p>
+                <a href="prodeus-det2.html" class="btn">Details Product</a>
+            </div>
+            <div class="col-4">
+                <img src="images/deus3.jpg">
+                <h4>Deus Ex Machina Bali EditicionT-shirt</h4>
+                <p>IDR 550.000</p>
+                <a href="prodeus-det3.html" class="btn">Details Product</a>
+            </div>
+            
+        </div>
+    </div>
+    <!-- brands -->
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                    <div class="col-5">
+                        <a href="#"><img src="images/deus_logo.jpg"></a>
+                    </div>
+                    <div class="col-5">
+                        <a href="#"><img src="images/efg_logo.jpg"></a>
+                    </div>
+                    <div class="col-5">
+                        <a href="#"><img src="images/holi_logo.jpg"></a>
+                    </div>
+                    <div class="col-5">
+                        <a href="#"><img src="images/tks_logo.jpg"></a>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <!-- IMG PR -->
+                    <img src="images/logo_footer.jpg">
+                    <p>Our ProductIs To Sustainably Make the Pleasure and 
+                        Benefits of Clotch.</p>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Useful Link</h3>
+                    <!-- UL SEMUA PR -->
+                    <ul>
+                        <a href="index.html"><li>Home</li></a>
+                        <a href="#"><li>Return Policy</li></a>
+                        <a href="#"><li>Payment</li></a>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <a href="#"><li>Facebook</li></a>
+                        <a href="#"><li>Instagram</li></a>
+                        <a href="#"><li>Shoppe</li></a>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020</p>
+        </div>
+    </div>
+
+</body>
+</html>

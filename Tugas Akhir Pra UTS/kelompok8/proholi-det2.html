@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ABC Collection | E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo_utama.jpg" width="125px">
+                </div>
+                <nav>
+                    <ul id="menuitems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="">Product</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="images/cart.png" width="30px" height="30px">
+                <img src="images/menu.png" class="menu-icon"
+                onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+    <!-- single details product -->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/holi2.jpg" width="100%" id="product-img">
+            </div>
+            <div class="col-2">
+                <p>Home | T-shirt</p>
+                <h1>Hooligans Kobe Frame</h1>
+                <h4>IDR 200.000</h4>
+                <select>
+                    <option>Select Size</option>
+                    <option>XLarge</option>
+                    <option>Large</option>
+                    <option>Medium</option>
+                    <option>Small</option>
+                </select>
+                <input type="number" name="jumlah_algoritma" id="harga_algoritma" size="7" value="0" onchange="total()"></th>
+                <a href="login.html" class="btn">Add To Cart</a>
+
+                <h3>Product Details</h3>
+                <p>Spesifikasi Material Cotton Combed 30s super soft
+                    Sablon Plastisol
+                </p>
+                <p>T-Shirt size Lebar Dada x Panjang Badan x Lebar Bahu x Panjang Lengan :<br>
+                    XLarge : 58cm x 77cm x 48,9cm x 21cm<br>
+                    Large : 54cm x 74,5cm x 47,7cm x 20,5cm<br>
+                    Medium : 51cm x 73cm x 46,5cm x 20cm<br>
+                    Small : 49cm x 71,5cm x 45,3cm x 19,5cm<br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- penghitungan -->
+    <div class="asd">
+        <table>
+			<tr>
+				<th colspan="3" style="text-align:right">jumlah total</th>
+				<th><input type="text" name="total_jumlah" id="total" value="0" readonly></th>
+			</tr>
+		</table>
+		<br><br>
+
+		<script type="text/javascript">
+		function total() {
+		var valgoritma = 200000 * parseInt(document.getElementById('harga_algoritma').value);
+		
+
+		var jumlah_harga = valgoritma;
+
+		document.getElementById('total').value = jumlah_harga;
+		}
+		
+		</script>
+    </div>
+<!-- title -->
+<div class="small-container">
+    <div class="row">
+        <h2 class="title">Related Product</h2>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="images/holi1.jpg">
+            <h4>Hooligans Snc Art</h4>
+            <p>IDR 215.000</p>
+            <a href="proholi-det1.html" class="btn">Details Product</a>
+        </div>
+        <div class="col-4">
+            <img src="images/holi3.jpg">
+            <h4>Hooligans Terrain</h4>
+            <p>IDR 100.000</p>
+            <a href="proholi-det3.html" class="btn">Details Product</a>
+        </div>
+        <div class="col-4">
+            <img src="images/holi4.jpg">
+            <h4>Hooligans SC Together</h4>
+            <p>IDR 210.000</p>
+            <a href="proholi-det4.html" class="btn">Details Product</a>
+        </div>
+    </div>
+</div>
+<!-- brands -->
+<div class="brands">
+    <div class="small-container">
+            <h2 class="title">Brands Logo</h2>
+            <div class="row">
+                <div class="col-5">
+                    <a href="prodeus.html"><img src="images/deus_logo.jpg"></a>
+                </div>
+                <div class="col-5">
+                    <a href="proefg.html"><img src="images/efg_logo.jpg"></a>
+                </div>
+                <div class="col-5">
+                    <a href="proholi.html"><img src="images/holi_logo.jpg"></a>
+                </div>
+                <div class="col-5">
+                    <a href="prots.html"><img src="images/tks_logo.jpg"></a>
+                </div>
+        </div>
+    </div>
+</div>
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <img src="images/logo_footer.jpg">
+                <p>Our ProductIs To Sustainably Make the Pleasure and 
+                    Benefits of Clotch.</p>
+            </div>
+            <div class="footer-col-2">
+                <h3>Useful Link</h3>
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="#"><li>Return Policy</li></a>
+                    <a href="pesanan.html"><li>Payment</li></a>
+                </ul>
+            </div>
+            <div class="footer-col-3">
+                <h3>Follow Us</h3>
+                <ul>
+                    <a href="#"><li>Facebook</li></a>
+                    <a href="#"><li>Instagram</li></a>
+                    <a href="#"><li>Shoppe</li></a>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2020</p>
+    </div>
+</div>
+
+</body>
+</html>
